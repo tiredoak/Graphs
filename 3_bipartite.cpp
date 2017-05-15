@@ -1,3 +1,15 @@
+/*
+  Given an undirected graph with n vertices and m edges, check
+  whether the graph is bipartite.
+  The idea is to use breadth first search (bfs) and to check
+  if at any point a vertex is trying to reach a vertex which
+  was already reached by another vertex,
+
+  Input: graph given in the standard format.
+         1 <= n <= 10^5, 0 <= m <= 10^5
+  Output: 1 if graph is bipartite and 0 otherwise.
+*/
+
 #include <iostream>
 #include <vector>
 #include <queue>

@@ -1,5 +1,12 @@
 /*
-  Given a DAG, output one of its topological orderings
+  Compute the topological ordering of a given DAG with n vertices
+  and m edges.
+  Traverse graph using DFS and add black nodes to vector as
+  they're discovered.
+
+  Input: a graph given in the standard format
+         1 <= n <= 10^5, 0 <= m <= 10^5
+  Output: any topological ordering of its vertices
 */
 
 #include <iostream>

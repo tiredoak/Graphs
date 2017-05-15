@@ -1,3 +1,16 @@
+/*
+  Given a directed with possibly negative edge weights and with
+  n vertices and m edges, check whether it contains a cycle of
+  negative weight. 
+  Use Bellman-Ford and if after V - 1 iteration there are still
+  edges to relax, there is a negative cycle.
+
+  Input: graph given in the standard format
+         1 <= n <= 10^3, 0 <= m <= 10^4
+         edge weights are integers of absolute value at most 10^3
+  Output: 1 if the graph has a negative cycle and 0 otherwise.
+*/
+
 #include <iostream>
 #include <vector>
 
@@ -5,7 +18,6 @@ using std::vector;
 
 int negative_cycle(vector<vector<int> > &adj, vector<vector<int> > &cost) {
   int size = adj.size();
-  // Constraint limits input to 10^5
   vector<int> dist(size, 10001);
   dist[0] = 0;
   for (int v = 0; v <= size; v++) {

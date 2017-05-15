@@ -1,3 +1,15 @@
+/*
+  Computes the number of strongly connected components in a 
+  directed graph with n vertices and m edges.
+  The key idea is that source components of the reverse graph
+  (Gr) are sink components of the original graph (G). To find
+  sink components of G, we run DFS on Gr.
+
+  Input: a graph in the standard format
+         1 <= n <= 10^4, 0 <= m <= 10^4
+  Output: number of strongly connected components
+*/
+
 #include <algorithm>
 #include <iostream>
 #include <vector>

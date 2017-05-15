@@ -1,3 +1,18 @@
+/*
+  Given an undirected graph with n vertices and m edges, and 
+  two vertices u and v, compute the length of the shortest path
+  between u and v.
+  The idea is simply to traverse graph using breadth first
+  search (bfs) starting at u and record its distance to other
+  vertices in the graph.
+
+  Input: graph given in the standard format.
+         next line contains vertices u and v.
+         2 <= n <= 10^5, 0 <= m <= 10^5, u != v, 1 <= u, v <= n
+  Output: minimum number of edges between u and v or -1 if there
+          is no path.
+*/
+
 #include <iostream>
 #include <vector>
 #include <queue>

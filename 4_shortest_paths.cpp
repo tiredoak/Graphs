@@ -1,3 +1,24 @@
+/*
+  Given a directed with possibly negative edge weights and with
+  n vertices and m edges, compute the length of the shortest paths
+  from s to all other vertices of the graph.
+  Use Bellman-Ford and if after V - 1 iteration there are still
+  edges to relax, there is a negative cycle. Find these vertices
+  and run breadth first search from them to find the vertices
+  for which infinite arbitrage is possible.
+
+  Input: graph given in the standard format
+         1 <= n <= 10^3, 0 <= m <= 10^4
+         edge weights are integers of absolute value at most 10^9
+  Output: For all vertices i from 1 to n output the following
+          on a separate line:
+            "*" if there is no path s to u
+            "-" if there is a path s to u, but there is no shortest
+            path from s to u (that is, the distance from s to u is 
+            -infinity)
+            length of the shortest path otherwise
+*/
+
 #include <iostream>
 #include <limits>
 #include <vector>

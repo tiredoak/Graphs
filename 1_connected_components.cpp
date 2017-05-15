@@ -1,3 +1,14 @@
+/*
+  Given an undirected graph with n vertices and m edges
+  compute the number of connected components.
+  Runs depth first search and keeps a clock, increasing it
+  whenever finishing exploring a connected component.
+
+  Input: a graph given in the standard format
+         1 <= n <= 10^3, 0 <= m <= 10^3
+  Output: number of connected components.
+*/
+
 #include <iostream>
 #include <vector>
 #include <utility> // for pair initialisation
@@ -5,6 +16,7 @@
 using std::vector;
 using std::pair;
 
+// Depth first search
 void explore(vector<vector<int> > &adj, vector<pair<int, bool> > &visited, int v, int cc) {
 	// Mark as visited
 	visited[v].second = true;

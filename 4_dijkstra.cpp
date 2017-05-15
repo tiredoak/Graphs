@@ -1,6 +1,14 @@
 /* 
-Implementation of Dijkstra's algorithm using adjacency list and
-priority queue
+  Given a directed graph with positive edge weights and with n
+  vertices and m edges as well two vertices u and v, compute the 
+  weight of the shortest path between u and v.
+  Implementation of Dijkstra's algorithm.
+  Input: graph given in the standard format.
+         next line contains two vertices u and v
+         1 <= n <= 10^3, 0 <= m <= 10^5, u != v 
+         1 <= u, v <= n
+  Output: minimum weight of a path from u to v or -1 if there
+          is no path.
 */
 
 #include <iostream>
